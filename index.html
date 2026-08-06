@@ -1,47 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Kämpf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simon Kämpf – Videographer & Video Producer für Corporate Video, Social Media und Internal Communications.">
+  <title>Simon Kämpf · Videographer &amp; Video Producer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #111;
+      background: #fff;
+    }
 
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            background: #ffffff;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
 
-        .text {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 11pt;
-            font-weight: 400;
-            color: #000;
-            white-space: nowrap;
-        }
+    body {
+      min-height: 100svh;
+      padding: clamp(24px, 5vw, 64px);
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        .text a {
-            color: inherit;
-            text-decoration: none;
-        }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
 
-        .text a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .content {
+      width: min(100%, 760px);
+    }
+
+    h1 {
+      margin: 0 0 0.3rem;
+      font-size: clamp(2.4rem, 8vw, 5.5rem);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .role {
+      margin: 0 0 clamp(2.5rem, 8vw, 5rem);
+      font-size: clamp(1.05rem, 2.7vw, 1.5rem);
+      line-height: 1.35;
+    }
+
+    .services {
+      margin: 0;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      line-height: 1.65;
+    }
+
+    .contact {
+      margin: clamp(2.5rem, 8vw, 5rem) 0 0;
+      font-size: clamp(1.05rem, 2.7vw, 1.5rem);
+      line-height: 1.4;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration-thickness: 2px;
+    }
+
+    footer {
+      padding-top: 2rem;
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      .services span {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <section class="content" aria-labelledby="name">
+      <h1 id="name">Simon Kämpf</h1>
+      <p class="role">Videographer &amp; Video Producer</p>
 
-    <div class="text">
-        Let's <a href="mailto:connect@simonkaempf.de">connect@simonkaempf.de</a>
-    </div>
+      <p class="services">
+        <span>Corporate Video · Social Media · Internal Communications</span>
+        <span>Concept · Production · Postproduction</span>
+      </p>
 
+      <p class="contact">Let’s <a href="mailto:connect@simonkaempf.de">connect@simonkaempf.de</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="impressum.html">Impressum</a>
+  </footer>
 </body>
 </html>
