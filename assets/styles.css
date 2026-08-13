@@ -1,0 +1,56 @@
+:root { --ink:#111; --muted:#666; --line:#dedede; --page:#fff; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; min-height:100vh; display:flex; flex-direction:column; background:var(--page); color:var(--ink); font-family:Helvetica,Arial,sans-serif; }
+a { color:inherit; }
+.site-header { width:min(1180px,calc(100% - 48px)); margin:0 auto; padding:34px 0; display:flex; justify-content:flex-end; }
+.nav { display:flex; gap:28px; align-items:center; }
+.nav a { text-decoration:none; font-size:14px; letter-spacing:.02em; padding:4px 0; border-bottom:1px solid transparent; }
+.nav a:hover,.nav a:focus-visible,.nav a[aria-current="page"] { border-color:var(--ink); outline:none; }
+.menu-toggle { display:none; border:0; background:none; font:inherit; padding:6px 0; cursor:pointer; }
+main { flex:1; }
+.page { width:min(1180px,calc(100% - 48px)); margin:0 auto; padding:76px 0 110px; }
+.eyebrow { margin:0 0 18px; color:var(--muted); font-size:12px; letter-spacing:.16em; text-transform:uppercase; }
+h1 { margin:0; font-size:clamp(42px,7vw,92px); line-height:.95; letter-spacing:-.055em; font-weight:500; }
+h2 { margin:0; font-size:clamp(25px,3vw,39px); line-height:1.08; letter-spacing:-.035em; font-weight:500; }
+p { font-size:17px; line-height:1.65; }
+.intro { max-width:680px; margin-top:34px; color:#333; }
+.home { min-height:calc(100vh - 170px); display:grid; place-items:center; text-align:center; padding:30px 0 80px; }
+.hero-logo { display:block; width:min(340px,68vw); max-height:220px; object-fit:contain; margin:0 auto 34px; }
+.home h1 { font-size:clamp(48px,8vw,104px); }
+.role { margin:24px 0 0; font-size:clamp(18px,2vw,25px); letter-spacing:-.015em; }
+.keywords { max-width:850px; margin:24px auto 0; color:var(--muted); font-size:14px; line-height:1.8; letter-spacing:.035em; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:78px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.service { padding:42px 34px 48px; min-height:390px; }
+.service + .service { border-left:1px solid var(--line); }
+.service-icon { width:52px; height:52px; object-fit:contain; margin-bottom:54px; }
+.service p { margin:22px 0 0; color:var(--muted); font-size:15px; }
+.about-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.72fr); gap:9vw; align-items:start; }
+.portrait { width:100%; aspect-ratio:4/5; object-fit:cover; background:#f2f2f2; }
+.contact-list { margin-top:56px; border-top:1px solid var(--line); }
+.contact-row { display:grid; grid-template-columns:150px 1fr; gap:24px; padding:22px 0; border-bottom:1px solid var(--line); }
+.contact-row span { color:var(--muted); font-size:14px; }
+.contact-row a { text-underline-offset:4px; }
+.legal { max-width:720px; }
+.legal h2 { font-size:22px; margin:44px 0 12px; letter-spacing:-.02em; }
+.legal p { margin:0; }
+.back-link { display:inline-block; margin-top:58px; color:var(--muted); font-size:13px; text-underline-offset:4px; }
+.site-footer { width:min(1180px,calc(100% - 48px)); margin:0 auto; padding:24px 0 30px; display:flex; justify-content:space-between; gap:24px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+.site-footer a { text-underline-offset:4px; }
+@media (max-width:760px) {
+  .site-header { width:calc(100% - 36px); padding:22px 0; position:relative; }
+  .menu-toggle { display:block; margin-left:auto; }
+  .nav { display:none; position:absolute; z-index:10; top:62px; left:0; right:0; flex-direction:column; align-items:flex-end; gap:18px; padding:20px; background:#fff; border:1px solid var(--line); }
+  .nav.is-open { display:flex; }
+  .page { width:calc(100% - 36px); padding:52px 0 78px; }
+  .home { min-height:calc(100vh - 132px); }
+  .services-grid { grid-template-columns:1fr; margin-top:54px; }
+  .service { min-height:0; padding:36px 0 40px; }
+  .service + .service { border-left:0; border-top:1px solid var(--line); }
+  .service-icon { margin-bottom:34px; }
+  .about-grid { grid-template-columns:1fr; gap:52px; }
+  .portrait { order:-1; }
+  .contact-row { grid-template-columns:1fr; gap:8px; }
+  .site-footer { width:calc(100% - 36px); }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
