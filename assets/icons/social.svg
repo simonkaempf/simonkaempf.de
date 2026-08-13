@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#111" stroke-width="2"><rect x="15" y="7" width="34" height="50" rx="5"/><circle cx="32" cy="31" r="10"/><path d="M28 26l10 5-10 5V26Zm1 24h6"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29.58 50">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #111;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="-9.21" y="11.21" width="48" height="27.58" rx="2" ry="2" transform="translate(-10.21 39.79) rotate(-90)"/>
+  <polygon class="st0" points="11.07 19.41 20.95 25.41 11.07 31.41 11.07 19.41"/>
+  <rect class="st0" x="12.19" y="44.69" width="5.19" height=".41"/>
+</svg>
