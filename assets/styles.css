@@ -54,3 +54,7 @@ p { font-size:17px; line-height:1.65; }
   .site-footer { width:calc(100% - 36px); }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+h1,
+h2 {
+  color: #CCCCC2;
+}
